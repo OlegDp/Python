@@ -24,7 +24,7 @@ while number != "0":
 
         if number > max_number:
             max_number = number
-        if number < min_number:
+        if number < max_number:
             min_number = number
 
     except :
