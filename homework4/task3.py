@@ -1,7 +1,7 @@
 sum_numbers = 0
 count_numbers = 0
 max_number = 0
-min_number = 0
+min_number = None
 even_count = 0
 odd_count = 0
 
@@ -24,8 +24,10 @@ while number != "0":
 
         if number > max_number:
             max_number = number
-        if number < max_number:
+        
+        if min_number is None or number < min_number:
             min_number = number
+           
 
     except :
         print("Будь ласка, введіть коректне ціле число.")
