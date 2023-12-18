@@ -29,6 +29,14 @@ while not number:
                     my_y += matrix[i][j]
         print("Cума діагоналі двомірного списку з права на ліво з гори у низ: ", my_y)
 
+        if len(matrix) % 2 != 0:
+            for i in range(len(matrix)):
+                for j in range(len(matrix[i])):
+                    if (len(matrix) - 1) / 2 == j and i == j:
+                        print("Число, яке знаходиться в центрі перетину діагоналей: ", matrix[i][j])
+        else:
+            print("Не можна обрахувати в зв'язку з тим, що введене число є парним (двувимірний список є парним N*N)")
+
     except:
         print('Треба було вводити число')
         number=None
